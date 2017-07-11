@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SurchPort | Discover Your New Favorite Spot</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico" />
+
+
+
+</head>
+<body>
+
+<!--=================   Sidebar  =================-->
+<div class="menubar">
+	<div class="menubar--Logo">
+		<a href="index.html">
+		<img src="assets/imgs/menubarLogo.png" alt="">
+		</a>
+	</div>
+	<div class="menubar--Nav">
+		<ul>
+			<li><a href="#/" data-toggle="tooltip" data-placement="right" title="Profile"><img src="assets/imgs/menubarProfile.png" alt=""></a></li>
+			<li><a href="#/" data-toggle="tooltip" data-placement="right" id="favoritesBtn" class="selected" title="Favorites"><img src="assets/imgs/menubarFavorites.png" alt=""></a></li>
+		</ul>
+	</div>
+</div>
+
+<!--===============   App Content   ==============-->
+<div class="page">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="header col-md-12"> 
+			<!-- HEADER -->
+				<div class="row">
+					<div class="header--Search">
+						<form id="searchForm">
+							<input type="text" id="bizSearch" class="header--Search__Input" placeholder="What are you looking for?">
+							<img src="assets/imgs/searchIcon.png" id="searchImg" alt="">
+							<input type="text" id="locationSearch" class="header--Search__Input" placeholder="Location: City or Zip Code">
+							<img src="assets/imgs/locationSearch.png" id="locationSearchImg" alt="">
+							<button type="submit" id="searchSubmit"></button>
+						</form>
+					</div>
+					<div class="header--Interface pull-right">
+						<ul>
+							<li><img src="assets/imgs/messageIcon.png" alt=""></li>
+							<li><img src="assets/imgs/notificationIcon.png" alt=""></li>
+							<li><img src="assets/imgs/userIcon.png" alt=""></li>
+						</ul>
+					</div>
+					<div class="header--Hero">
+						<h1>A Better Way to Discover Your</br>New Favorite Spot</h1>
+						<h4>Search, Compare, and Save any place you'd ever want to visit. </h4>
+					</div>
+				</div>
+			</div>
+			<!-- END HEADER -->
+		</div>
+		<div class="row">
+			<div class="content col-md-12">
+
+						<h2 class="content--Heading">Recommendations</h2>
+							<div class="results">
+							<div class="card--Result" data-venueid="4ae7235df964a520c2a821e3">
+								<div class="card--Result__Img">
+									<img src="https://igx.4sqi.net/img/general/325x222/4tnwXv4fNlx7OUXG_qWQOQvD3qJOIOyZ8zmJNDT32TA.jpg" alt="">
+									<div class="shadow cardLaunch" data-venueid="4ae7235df964a520c2a821e3"></div>
+									<div class="cardFavBtn favThisBtn" data-venueid="4ae7235df964a520c2a821e3"><i class="fa fa-star-o favStar " aria-hidden="true"></i></div>
+								</div>
+								<div class="card--Result__Info cardLaunch" data-venueid="4ae7235df964a520c2a821e3">
+									<h3 class="card--Title">Robert and Arlene Kogod Courtyard</h3>
+									<div class="card--Rating">
+										<div class="card--Rating__Overlay" style="width:88%">
+											<img src="assets/imgs/starsFill.png" alt="">
+										</div>
+									</div>
+									<div class="card--Location">
+										<p><span><img src="assets/imgs/cardLocation.png" alt=""></span>Washington</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="card--Result">
+								<div class="card--Result__Img">
+									<img src="https://igx.4sqi.net/img/general/325x222/865165_Ao2koVMmK3YaAKvX1khw5gDLWIOXn8e2b66YsM-vfQk.jpg" alt="">
+									<div class="shadow cardLaunch" data-venueid="4e440746b3ad4263a203aab8"></div>
+									<div class="cardFavBtn favThisBtn" data-venueid="4e440746b3ad4263a203aab8"><i class="fa fa-star-o favStar" aria-hidden="true"></i></div>
+								</div>
+								<div class="card--Result__Info cardLaunch" data-venueid="4e440746b3ad4263a203aab8">
+									<h3 class="card--Title">National Gallery of Art</h3>
+									<div class="card--Rating">
+										<div class="card--Rating__Overlay" style="width:96%">
+											<img src="assets/imgs/starsFill.png" alt="">
+										</div>
+									</div>
+									<div class="card--Location">
+										<p><span><img src="assets/imgs/cardLocation.png" alt=""></span>Washington</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="card--Result" data-venueid="44014894f964a5201d301fe3">
+								<div class="card--Result__Img">
+									<img src="https://igx.4sqi.net/img/general/325x222/79592812_Bn7_PvOnhWYdbTqt75pdCtwHdUcapxIqasiHW-hUBWg.jpg" alt="">
+									<div class="shadow cardLaunch" data-venueid="44014894f964a5201d301fe3"></div>
+									<div class="cardFavBtn favThisBtn" data-venueid="44014894f964a5201d301fe3"><i class="fa fa-star-o favStar" aria-hidden="true"></i></div>
+								</div>
+								<div class="card--Result__Info cardLaunch" data-venueid="44014894f964a5201d301fe3">
+									<h3 class="card--Title">Old Ebbitt Grill</h3>
+									<div class="card--Rating">
+										<div class="card--Rating__Overlay" style="width:93%">
+											<img src="assets/imgs/starsFill.png" alt="">
+										</div>
+									</div>
+									<div class="card--Location">
+										<p><span><img src="assets/imgs/cardLocation.png" alt=""></span>Washington</p>
+									</div>
+								</div>
+							</div>
+			</div>
+
+						<div class="content--Footer col-md-12 ">
+						
+								<p class="pull-left">
+									SurchPort created by <a href="https://github.com/SavSamoylov" target="_blank">Sav Samoylov</a>, <a href="https://github.com/johnsaugy" target="_blank">John Saugy</a> , <a href="https://github.com/ezharandall" target="_blank">Ezha Randall</a>, <a href="https://github.com/jonathanansley" target="_blank">Jonathan Ansley</a>, and <a href="https://github.com/olgaanderjaska" target="_blank">Olga Anderjaska</a>.
+								</p>
+								<div class="poweredBy pull-right">
+									<img src="assets/imgs/foursquare.png" alt="">
+								</div>
+							
+						</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+<!--================= Javascript =================-->
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script>
+	function gAutoComplete(){
+		    var locInput = document.getElementById("locationSearch");
+			var options = {                    
+			    types: ["(regions)"],
+			};
+		    
+            var autocomplete = new google.maps.places.Autocomplete(locInput,options);
+	}
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyBT4EaumZ2atEY3EoRywiZtd1aAbJdoId0&libraries=places&callback=gAutoComplete"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
