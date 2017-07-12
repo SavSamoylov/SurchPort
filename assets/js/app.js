@@ -9,29 +9,28 @@ $(document).ready(function(){
 //  appProps{} -
 //              fs{} - Stores Foursquare API keys.
 //              gm{} - Will store Google Maps keys.
+//              fBase{} - Firebase Config
 //
 //
-// NOTE: It's better practice to store API keys on the backend. So if we have time before our presentation we 
-//       should place them on our Firebase Server. For now, storing them here is fine.
 //
 //===============================================================================================================
 
 const appProps = {
     fs: { //  FOURSQUARE API    
-        clientID: "IHMKAGTH1OPVZB11OJUS3YVATBRZGA4GXJFAAIVLJHSVYIVX",
-        clientSECRET: "WN5TRJG5MXTFC3IXRWFFZ4WVELP13KPFB42DXZVJJ3MRLDTA",
+        clientID: config.fs.clientID,
+        clientSECRET: config.fs.clientSECRET,
     },    
     gm: {
-        key: "AIzaSyDRH-_Jw8Jwf_T6LZt3Y5XJh1KSOsPqO0I",
+        key: config.gm.key,
     },
     fBase: {
         config: {
-                apiKey: "AIzaSyDKSWcHpLVdAqZCM6LA74lPZxxYHPt9BLk",
-                authDomain: "spfavorites-1b505.firebaseapp.com",
-                databaseURL: "https://spfavorites-1b505.firebaseio.com",
-                projectId: "spfavorites-1b505",
-                storageBucket: "",
-                messagingSenderId: "301745670269"
+                apiKey: config.fBase.config.apiKey,
+                authDomain: config.fBase.config.authDomain,
+                databaseURL: config.fBase.config.databaseURL,
+                projectId: config.fBase.config.projectId,
+                storageBucket: config.fBase.config.storageBucket,
+                messagingSenderId: config.fBase.config.messagingSenderId
               },
     },
 }
@@ -752,14 +751,13 @@ ADD TO FAVORITES</button></li>
     },
     ui:{
         googleMapsFrame: function(bizAddress, lat, lng){
-            //AIzaSyDRH-_Jw8Jwf_T6LZt3Y5XJh1KSOsPqO0I
             var mapframe = `
                 <iframe
                   width="100%"
                   height="200"
                   frameborder="0" style="border:0"
                   scrolling="no"
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDRH-_Jw8Jwf_T6LZt3Y5XJh1KSOsPqO0I
+                  src="https://www.google.com/maps/embed/v1/place?key=${[appProps.gm.key]}
                     &q=${[bizAddress]}&center=${[lat]},${[lng]}">
                 </iframe>
             `;
